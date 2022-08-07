@@ -25,7 +25,7 @@ public class HelloController {
     @GetMapping("hello-string")
     @ResponseBody // html 태그 없이 문자만 그대로 리턴해준다.
     public String helloString(@RequestParam("name") String name) {
-        return "hello" + name;
+        return "hello" + name; // (StringConverter)
     }
 
     @GetMapping("hello-api")
@@ -33,7 +33,7 @@ public class HelloController {
     public Hello helloApi(@RequestParam("name") String name) {
         Hello hello = new Hello(); // Hello 객체 생성
         hello.setName(name); // hello 객체에 name 입력
-        return hello; // hello 객체를 넘김 -> json 으로 변환해서 출력
+        return hello; // hello 객체를 넘김 -> json 으로 변환해서 출력(JsonConverter)
     }
 
     static class Hello {
