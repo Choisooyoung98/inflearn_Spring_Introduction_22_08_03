@@ -22,7 +22,7 @@ public class MemoryMemberRepository implements MemberRepository{
     }
 
     @Override
-    public Optional<Member> findById(String name) {
+    public Optional<Member> findByName(String name) {
         // stream().filter() 람다식 찾아보기...
         return store.values().stream()
                 .filter(member -> member.getName().equals(name))
