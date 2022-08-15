@@ -10,6 +10,7 @@ import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
 
+// 단위테스트
 class MemberServiceTest {
 
     MemberService memberService;

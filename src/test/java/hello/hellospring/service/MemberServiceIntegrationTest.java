@@ -12,6 +12,7 @@ import org.springframework.transaction.annotation.Transactional;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
+// 통합테스트
 @SpringBootTest
 @Transactional //BeforeEach, AfterEach (테스트가 끝난 뒤 롤백 해버린다.)
 public class MemberServiceIntegrationTest {
