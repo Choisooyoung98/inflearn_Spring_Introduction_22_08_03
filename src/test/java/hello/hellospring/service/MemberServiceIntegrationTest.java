@@ -22,7 +22,6 @@ public class MemberServiceIntegrationTest {
     @Autowired MemberRepository memberRepository;
 
     @Test
-    @Commit
     void 회원가입() {
         //test는 뭔가가 주어졌을 때(given) 이걸 실행했을 때(when) 이게 나와야돼(then) 라고 생각하면서 짜면 된다.
         //given
