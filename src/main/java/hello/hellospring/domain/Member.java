@@ -9,7 +9,7 @@ public class Member {
     @GeneratedValue(strategy = GenerationType.IDENTITY) // 디비가 알아서 생성해주는 primarykey? 라고 보면된다.
     private Long id;
 
-    @Column(name = "username") // DB 컬럼 명이 "username" 이면 이렇게 명시해준다.
+    // @Column(name = "username") DB 컬럼 명이 "username" 이면 이렇게 명시해준다.
     private String name;
 
     public Long getId() {
